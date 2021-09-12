@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnWifion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WiFi On"
+        tools:layout_editor_absoluteX="185dp"
+        tools:layout_editor_absoluteY="67dp" />
+
+    <Button
+        android:id="@+id/btnWifioff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WiFi Off" />
+
+    <Button
+        android:id="@+id/btnBlueon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth On" />
+
+    <Button
+        android:id="@+id/btnBlueoff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth Off" />
+
+    <Button
+        android:id="@+id/btnShowBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Bluetooth Devices" />
+</LinearLayout>

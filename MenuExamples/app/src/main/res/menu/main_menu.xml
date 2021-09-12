@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/open"
+        android:icon="@mipmap/person"
+        android:title="Open"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/close"
+        android:title="Close" />
+    <item
+        android:id="@+id/app_bar_switch"
+        android:title="Switch"
+        app:actionLayout="@layout/switch_item" />
+    <item
+        android:id="@+id/Profile"
+        android:title="Profile"
+        app:showAsAction="always" />
+</menu>
