@@ -5,9 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.AbsListView
 import android.widget.SearchView
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.*
 
 class MainActivity : AppCompatActivity() {
     lateinit var adapter:MyAdapter
@@ -25,11 +25,13 @@ class MainActivity : AppCompatActivity() {
             listing.add(dataitems)
         }
         adapter=MyAdapter(this@MainActivity,listing)
-       // recycler.layoutManager=LinearLayoutManager(this@MainActivity,LinearLayoutManager.HORIZONTAL,false)
-        recycler.layoutManager=GridLayoutManager(this@MainActivity,2)
+         recycler.layoutManager=LinearLayoutManager(this@MainActivity,LinearLayoutManager.HORIZONTAL,false)
+        //recycler.layoutManager=GridLayoutManager(this@MainActivity,2)
         recycler.adapter=adapter
+        val snapHelper:SnapHelper=PagerSnapHelper()
+        snapHelper.attachToRecyclerView(recycler)
 
-    }
+            }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.searchview,menu)
@@ -51,3 +53,4 @@ class MainActivity : AppCompatActivity() {
     }
 
 }
+
