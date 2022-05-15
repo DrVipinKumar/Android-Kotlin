@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_package = "edu.kiet.protodatastore";
+option java_multiple_files = true;
+
+message ColorInfo {
+  int32 red = 1;
+  int32 green =2;
+  int32 blue=3;
+}
